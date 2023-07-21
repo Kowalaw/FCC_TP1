@@ -1,0 +1,25 @@
+body{
+  background: #222266;
+}
+#f{
+  background: #555588;
+  width: 80%;
+  margin-top: 20;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+input, textarea, select, button{
+  background: #9999AA;
+}
+p, h1{
+  color: white;
+}
+h1{
+  padding: 0 30; 
+}
+*{
+  color: white;
+  font-family: Bradley Hand, cursive;
+}

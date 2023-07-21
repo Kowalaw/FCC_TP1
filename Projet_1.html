@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <title>Formulaire de réservation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <div id="f">
+    <h1 id="title">Formulaire de réservation</h1>
+    <p id="description">Merci de completer le formulaire dans son intégralité pour validé que votre réservation soit valide.</p>
+    <form id="survey-form">
+        <ul>
+            <li>
+                <label id="name-label">Nom: <input id="name" type="text" placeholder="nom" required></label>
+            <li>
+                <label id="email-label">E-mail: <input id="email" type="email" placeholder="xxx@xxx.xx" required></label>
+            <li>
+                <label id="number-label">Age: <input id="number" type="number" 
+            
+                placeholder="age" min="18" max="99"></label>
+        </ul>
+        <hr>
+        <p>Avez vous des enfants ?</p>
+        <input type="radio" value="opt1" name="opt1-opt2"> oui
+        <input type="radio" value="opt2" name="opt1-opt2"> non
+        <hr>
+        <p>Combien ? (si non, ne cochez aucune case)</p>
+        <input type="checkbox" value="check1"> 1
+        <input type="checkbox" value="check2"> 2
+        <input type="checkbox" value="check3"> plus de 2
+        <hr>
+        <p>Avez vous des annimaux ?</p>
+    <select id="dropdown">
+        <option>Oui</option>
+        <option>Non</option>
+    </select>
+    <hr>
+    <p>Votre message</p>
+    <textarea></textarea>
+    <button id="submit" type="submit">Envoyé</button>
+    </form>
+    <p>Toute l'équipe vous remerci pour votre confiance !</p>
+</div>
+</body>
+</html>
