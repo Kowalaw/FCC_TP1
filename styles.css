@@ -23,3 +23,7 @@ h1{
   color: white;
   font-family: Bradley Hand, cursive;
 }
+.caseForm{
+  width: 250px;
+  display: flex;
+}
