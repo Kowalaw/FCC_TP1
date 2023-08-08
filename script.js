@@ -3,11 +3,15 @@ let mail = document.getElementById('email')
 let age = document.getElementById('number')
 let enfantOuiNon = 'non'
 let enfant = '0'
+let varAnimaux = 'non'
+let message = document.querySelector('textarea')
 let i=0
 let i2=0
+let i3=0
 
 radioEnfant()
 radioNombre()
+animaux()
 envoyer()
 
 function envoyer(){
@@ -15,11 +19,13 @@ function envoyer(){
     envoyer.addEventListener('click',(event)=>{
         event.preventDefault()
         console.log(
-            'nom :' +name.value,
-            'mail :' +mail.value,
-            'age :' +age.value,
-            'enfant :'+enfantOuiNon,
-            "enfant :" +enfant )
+            'nom : ' +name.value,
+            '\nmail : ' +mail.value,
+            '\nage : ' +age.value,
+            '\nenfant : '+enfantOuiNon,
+            "\nenfant : " +enfant,
+            "\nanimaux : "+ varAnimaux,
+            "\nmessage : "+message.value )
     })
 }
 function radioEnfant(){
@@ -54,4 +60,14 @@ function radioNombre(){
             }
         })
     }
+}
+function animaux(){
+    let animauxOuiNon = document.querySelector('select')
+    animauxOuiNon.addEventListener('change',(event)=>{
+        if(event.target.value==='oui'){
+            varAnimaux = "oui"
+        } else {
+            varAnimaux = "non"
+        }
+    })
 }
